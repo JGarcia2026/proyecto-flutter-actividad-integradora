@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Proyecto Móvil Flutter',
+      title: 'Actividad Integradora 1',
       debugShowCheckedModeBanner: false,
       home: const HomePage(),
     );
@@ -25,13 +25,13 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  bool mostrarMensaje = false; // Widget nuevo útil
+  bool mostrarMensaje = false;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Pantalla Principal'),
+        title: const Text('Actividad Integradora'),
         backgroundColor: Colors.teal,
         foregroundColor: Colors.white,
       ),
@@ -41,14 +41,14 @@ class _HomePageState extends State<HomePage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
-              'Bienvenido a mi proyecto Flutter',
+              'Bienvenido a la Actividad Integradora 1',
               style: TextStyle(fontSize: 18),
             ),
             const SizedBox(height: 12),
 
             SwitchListTile(
               title: const Text('Mostrar mensaje adicional'),
-              subtitle: const Text('Widget nuevo con función real'),
+              subtitle: const Text('Uso del widget SwitchListTile'),
               value: mostrarMensaje,
               onChanged: (value) {
                 setState(() {
@@ -59,7 +59,7 @@ class _HomePageState extends State<HomePage> {
 
             if (mostrarMensaje)
               const Text(
-                'Mensaje adicional activado ✅',
+                'Mensaje adicional activado correctamente ✅',
                 style: TextStyle(fontSize: 16),
               ),
 
@@ -69,7 +69,7 @@ class _HomePageState extends State<HomePage> {
               onPressed: () {
                 ScaffoldMessenger.of(context).showSnackBar(
                   const SnackBar(
-                    content: Text('Este es un SnackBar'),
+                    content: Text('SnackBar funcionando correctamente'),
                     duration: Duration(seconds: 2),
                   ),
                 );
@@ -86,7 +86,7 @@ class _HomePageState extends State<HomePage> {
                   MaterialPageRoute(builder: (_) => const SecondPage()),
                 );
               },
-              child: const Text('Ir a segunda pantalla'),
+              child: const Text('Ir a pantalla secundaria'),
             ),
           ],
         ),
@@ -102,7 +102,7 @@ class SecondPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Segunda Pantalla'),
+        title: const Text('Pantalla Secundaria'),
         backgroundColor: Colors.deepPurple,
         foregroundColor: Colors.white,
       ),
@@ -111,7 +111,7 @@ class SecondPage extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             const Text(
-              'Esta es la segunda pantalla',
+              'Estás en la segunda pantalla',
               style: TextStyle(fontSize: 18),
             ),
             const SizedBox(height: 16),
@@ -119,7 +119,7 @@ class SecondPage extends StatelessWidget {
               onPressed: () {
                 Navigator.pop(context);
               },
-              child: const Text('Regresar'),
+              child: const Text('Regresar a la pantalla principal'),
             ),
           ],
         ),
