@@ -1,16 +1,18 @@
-# proyecto_movil
+# Proyecto Flutter – Actividad Integradora 1
 
-A new Flutter project.
+Aplicación Flutter desarrollada como parte de la actividad integradora.
+Incluye navegación entre pantallas, SnackBar y uso del widget SwitchListTile.
 
-## Getting Started
+## Funcionalidades
+- Navegación entre pantallas
+- Botón con SnackBar
+- Widget SwitchListTile
+- Interfaz básica con AppBar
 
-This project is a starting point for a Flutter application.
+## Capturas de la app
 
-A few resources to get you started if this is your first Flutter project:
+### Pantalla principal
+![Pantalla principal](screenshots/pantalla_principal.png)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Pantalla secundaria
+![Pantalla secundaria](screenshots/pantalla_secundaria.png)
