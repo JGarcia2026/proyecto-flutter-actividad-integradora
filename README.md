@@ -12,7 +12,8 @@ Incluye navegación entre pantallas, SnackBar y uso del widget SwitchListTile.
 ## Capturas de la app
 
 ### Pantalla principal
-![Pantalla principal](screenshots/pantalla_principal.png)
+<img width="376" height="705" alt="pantalla_principal" src="https://github.com/user-attachments/assets/005fa83e-1e1d-44f5-8984-0508cef6a821" />
+
 
 ### Pantalla secundaria
-![Pantalla secundaria](screenshots/pantalla_secundaria.png)
+<img width="373" height="705" alt="pantalla_secundaria" src="https://github.com/user-attachments/assets/57c03991-1241-443d-8489-fd8041c5c7d1" />
